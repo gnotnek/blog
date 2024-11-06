@@ -2,3 +2,5 @@
 <p><%= @blog_post.body %></p>
 <p><em>Posted on <%= @blog_post.created_at.strftime("%B %d, %Y") %></em></p>
 <p><%= link_to "Back to all posts", "/" %></p>
+<br>
+<%= button_to "Delete", @blog_post, method: :delete, data: {turbo_confirm: "Are you sure?"} %>

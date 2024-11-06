@@ -1,5 +1,7 @@
 <h1>All Blog Posts</h1>
 
+<%= button_to "New Post", new_blog_post_path %>
+
 <% @blog_posts.each do |post| %>
     <div class="blog-post">
         <h2><%= link_to post.title, post %></h2>
